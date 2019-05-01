@@ -55,6 +55,7 @@ table {
 
 @link-color: dodgerblue;
 @link-color-hover: darkred;
+@background-color: lightsalmon;
 
 html, body {
 	height: 100%;
@@ -83,12 +84,29 @@ h2 {
 				color: @link-color-hover;
 			}
 		}
+		@media( max-width: 500px ) nav {
+			width: 500px;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-items: center;
+		}
+
+	}
+
+	@media( max-width: 500px ) {
+		width: 500px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
 	}
 	
 	}
 	img{
 			width: 600px;
-		
+			@media( max-width: 500px ) {
+				width: 500px;
+				display:block;
+			}
 	}
 		.about-superman {
 			height: 400px;
@@ -96,7 +114,7 @@ h2 {
 			flex-flow: column wrap;
 			justify-content: flex-start;
 			width: 900px;
-			background-color: lightcoral;
+			background-color: @background-color;
 			h1{
 				text-align: right;
 				font-size: 48px;
@@ -107,6 +125,11 @@ h2 {
 				margin-left: 10px;
 				width: 280px;
 			}
+			@media(max-width: 500px ) {
+				width: 500px;
+				display: block;
+			}
+
 		}
 
 		hr {
@@ -124,7 +147,7 @@ h2 {
 			display: flex;
 			flex-flow: column nowrap;
 			align-items: center;
-			background-color: lightgray;
+			background-color: @background-color;
 			margin: 10px 10px 10px 10px;
 			h2{
 font-size: 34px;
@@ -136,13 +159,14 @@ margin-top: 3px;
 			}
 			button{
 				justify-self: flex-end;
+				color: @link-color
 				margin-top: 20px;
 				margin-bottom: 10px;
 				height: 40%;
 				width: 60%;
 				border-radius: 25px;
 				&:hover{
-					background-color: dodgerblue;
+					background-color: @link-color-hover;
 					color: burlywood;
 				}
 			}
@@ -160,20 +184,35 @@ margin-top: 3px;
 		p{
 		width: 49%;
 		}
-		span{
-			margin-top: 40px;
-			font-size: 48px;
-			transform: rotate(-10deg);
+		a{
+			color: red;
 		}
-	
 
-	
+		@media( max-width: 500px ) {
+			.bottom {
+				width: 500px;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;s
+			}
+			
+		}
 }
 
 footer {
 	margin-top: 40px;
 	text-align: center;
+@media(max-width: 500px) {
+footer {
+	width: 500px;
+	text-align: center;
+}
+	
 }
 
-
+@media(max-width:500px){
+	html, body {
+		width: 500px;
+	}
+}
 }

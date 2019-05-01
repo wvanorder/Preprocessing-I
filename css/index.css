@@ -170,7 +170,7 @@ body .about-superman {
   flex-flow: column wrap;
   justify-content: flex-start;
   width: 900px;
-  background-color: lightcoral;
+  background-color: lightsalmon;
 }
 html .about-superman h1,
 body .about-superman h1 {
@@ -202,7 +202,7 @@ body .boxes-of-skills .skillset {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: lightgray;
+  background-color: lightsalmon;
   margin: 10px 10px 10px 10px;
 }
 html .boxes-of-skills .skillset h2,
@@ -246,7 +246,7 @@ body .bottom p {
 html .bottom span,
 body .bottom span {
   margin-top: 40px;
-  font-size: 48px;
+  font-size: 24px;
   transform: rotate(-10deg);
 }
 html footer,
