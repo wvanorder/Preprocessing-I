@@ -159,9 +159,34 @@ html header nav a:hover,
 body header nav a:hover {
   color: darkred;
 }
+@media (max-width: 500px) nav {
+  html header nav,
+  body header nav {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+  }
+}
+@media (max-width: 500px) {
+  html header,
+  body header {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
 html img,
 body img {
   width: 600px;
+}
+@media (max-width: 500px) {
+  html img,
+  body img {
+    width: 500px;
+    display: block;
+  }
 }
 html .about-superman,
 body .about-superman {
@@ -183,6 +208,20 @@ html .about-superman p,
 body .about-superman p {
   margin-left: 10px;
   width: 280px;
+}
+@media (max-width: 500px) {
+  html .about-superman,
+  body .about-superman {
+    height: 614px;
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  html .about-superman p,
+  body .about-superman p {
+    margin-left: 10px;
+    width: 95%;
+  }
 }
 html hr,
 body hr {
@@ -218,6 +257,7 @@ body .boxes-of-skills .skillset p {
 html .boxes-of-skills .skillset button,
 body .boxes-of-skills .skillset button {
   justify-self: flex-end;
+  color: dodgerblue;
   margin-top: 20px;
   margin-bottom: 10px;
   height: 40%;
@@ -226,8 +266,25 @@ body .boxes-of-skills .skillset button {
 }
 html .boxes-of-skills .skillset button:hover,
 body .boxes-of-skills .skillset button:hover {
-  background-color: dodgerblue;
+  background-color: darkred;
   color: burlywood;
+}
+@media (max-width: 500px) {
+  html .boxes-of-skills,
+  body .boxes-of-skills {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  html .boxes-of-skills .skillset,
+  body .boxes-of-skills .skillset {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 html .bottom,
 body .bottom {
@@ -243,14 +300,39 @@ html .bottom p,
 body .bottom p {
   width: 49%;
 }
-html .bottom span,
-body .bottom span {
-  margin-top: 40px;
-  font-size: 24px;
+html .bottom a,
+body .bottom a {
+  color: dodgerblue;
   transform: rotate(-10deg);
+  margin-top: 20px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  html .bottom,
+  body .bottom {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 html footer,
 body footer {
   margin-top: 40px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  html footer,
+  body footer {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 500px;
+    margin: 0;
+  }
 }
