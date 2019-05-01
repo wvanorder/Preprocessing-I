@@ -330,8 +330,10 @@ body footer {
   }
 }
 @media (max-width: 500px) {
-  html,
-  body {
+  html html,
+  body html,
+  html body,
+  body body {
     width: 500px;
     margin: 0;
   }
