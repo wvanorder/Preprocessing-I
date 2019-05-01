@@ -133,4 +133,124 @@ table {
 html,
 body {
   height: 100%;
+  width: 900px;
+  margin: 0 auto;
+}
+html h2,
+body h2 {
+  font-size: 42px;
+  text-align: center;
+  text-decoration: underline;
+}
+html header nav,
+body header nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+html header nav a,
+body header nav a {
+  text-decoration: none;
+  color: dodgerblue;
+  margin: 20px 20px 20px 0px;
+}
+html header nav a:hover,
+body header nav a:hover {
+  color: darkred;
+}
+html img,
+body img {
+  width: 600px;
+}
+html .about-superman,
+body .about-superman {
+  height: 400px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 900px;
+  background-color: lightcoral;
+}
+html .about-superman h1,
+body .about-superman h1 {
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+html .about-superman p,
+body .about-superman p {
+  margin-left: 10px;
+  width: 280px;
+}
+html hr,
+body hr {
+  border: 1px solid gray;
+}
+html .boxes-of-skills,
+body .boxes-of-skills {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+html .boxes-of-skills .skillset,
+body .boxes-of-skills .skillset {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: lightgray;
+  margin: 10px 10px 10px 10px;
+}
+html .boxes-of-skills .skillset h2,
+body .boxes-of-skills .skillset h2 {
+  font-size: 34px;
+  margin-top: 3px;
+}
+html .boxes-of-skills .skillset p,
+body .boxes-of-skills .skillset p {
+  text-align: center;
+  margin: 5px 10px;
+}
+html .boxes-of-skills .skillset button,
+body .boxes-of-skills .skillset button {
+  justify-self: flex-end;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 40%;
+  width: 60%;
+  border-radius: 25px;
+}
+html .boxes-of-skills .skillset button:hover,
+body .boxes-of-skills .skillset button:hover {
+  background-color: dodgerblue;
+  color: burlywood;
+}
+html .bottom,
+body .bottom {
+  height: 100px;
+  display: flex;
+  flex-flow: column wrap;
+}
+html .bottom h3,
+body .bottom h3 {
+  font-size: 32px;
+}
+html .bottom p,
+body .bottom p {
+  width: 49%;
+}
+html .bottom span,
+body .bottom span {
+  margin-top: 40px;
+  font-size: 48px;
+  transform: rotate(-10deg);
+}
+html footer,
+body footer {
+  margin-top: 40px;
+  text-align: center;
 }
