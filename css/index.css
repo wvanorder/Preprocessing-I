@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 900px;
+  margin: 0 auto;
+}
+html h2,
+body h2 {
+  font-size: 42px;
+  text-align: center;
+  text-decoration: underline;
+}
+html header nav,
+body header nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+html header nav a,
+body header nav a {
+  text-decoration: none;
+  color: dodgerblue;
+  margin: 20px 20px 20px 0px;
+}
+html header nav a:hover,
+body header nav a:hover {
+  color: darkred;
+}
+@media (max-width: 500px) nav {
+  html header nav,
+  body header nav {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+  }
+}
+@media (max-width: 500px) {
+  html header,
+  body header {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+html img,
+body img {
+  width: 600px;
+}
+@media (max-width: 500px) {
+  html img,
+  body img {
+    width: 500px;
+    display: block;
+  }
+}
+html .about-superman,
+body .about-superman {
+  height: 400px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 900px;
+  background-color: lightsalmon;
+}
+html .about-superman h1,
+body .about-superman h1 {
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+html .about-superman p,
+body .about-superman p {
+  margin-left: 10px;
+  width: 280px;
+}
+@media (max-width: 500px) {
+  html .about-superman,
+  body .about-superman {
+    height: 614px;
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  html .about-superman p,
+  body .about-superman p {
+    margin-left: 10px;
+    width: 95%;
+  }
+}
+html hr,
+body hr {
+  border: 1px solid gray;
+}
+html .boxes-of-skills,
+body .boxes-of-skills {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+html .boxes-of-skills .skillset,
+body .boxes-of-skills .skillset {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: lightsalmon;
+  margin: 10px 10px 10px 10px;
+}
+html .boxes-of-skills .skillset h2,
+body .boxes-of-skills .skillset h2 {
+  font-size: 34px;
+  margin-top: 3px;
+}
+html .boxes-of-skills .skillset p,
+body .boxes-of-skills .skillset p {
+  text-align: center;
+  margin: 5px 10px;
+}
+html .boxes-of-skills .skillset button,
+body .boxes-of-skills .skillset button {
+  justify-self: flex-end;
+  color: dodgerblue;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 40%;
+  width: 60%;
+  border-radius: 25px;
+}
+html .boxes-of-skills .skillset button:hover,
+body .boxes-of-skills .skillset button:hover {
+  background-color: darkred;
+  color: burlywood;
+}
+@media (max-width: 500px) {
+  html .boxes-of-skills,
+  body .boxes-of-skills {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  html .boxes-of-skills .skillset,
+  body .boxes-of-skills .skillset {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+html .bottom,
+body .bottom {
+  height: 100px;
+  display: flex;
+  flex-flow: column wrap;
+}
+html .bottom h3,
+body .bottom h3 {
+  font-size: 32px;
+}
+html .bottom p,
+body .bottom p {
+  width: 49%;
+}
+html .bottom a,
+body .bottom a {
+  color: dodgerblue;
+  transform: rotate(-10deg);
+  margin-top: 20px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  html .bottom,
+  body .bottom {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+html footer,
+body footer {
+  margin-top: 40px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  html footer,
+  body footer {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html html,
+  body html,
+  html body,
+  body body {
+    width: 500px;
+    margin: 0;
+  }
+}
